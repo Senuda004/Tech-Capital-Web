@@ -35,7 +35,7 @@ const Header = () => {
           : ""
       }`}
     >
-      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
+      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0 h-30">
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <Image
@@ -43,14 +43,14 @@ const Header = () => {
               alt="logo"
               width={50}
               height={20}
-              className="hidden w-full dark:block"
+              className="hidden w-full dark:block h-45"
             />
             <Image
               src="/images/logo/logo-2.svg"
               alt="logo"
               width={50}
               height={20}
-              className="w-full dark:hidden"
+              className="w-full dark:hidden h-45"
             />
           </a>
 
@@ -103,7 +103,7 @@ const Header = () => {
           }`}
         >
           <nav>
-            <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
+            <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-15">
               {menuData.map((menuItem, key) => (
                 <li key={key} className={menuItem.submenu && "group relative"}>
                   {menuItem.submenu ? (
