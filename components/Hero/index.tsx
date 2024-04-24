@@ -32,8 +32,8 @@ const Hero = () => {
                 dedicated to delivering top-notch services to meet the needs of our valued clients.
               </p>
 
-              <div className="mt-15">
-                <form onSubmit={handleSubmit}>
+              <div className="mt-20">
+                {/* <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
                     <input
                       value={email}
@@ -49,7 +49,7 @@ const Hero = () => {
                       Get Hi
                     </button>
                   </div>
-                </form>
+                </form> */}
 
                 {/* <p className="mt-5 text-black dark:text-white">
                   Try for free no credit card required.
@@ -80,10 +80,10 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className=" relative aspect-[200/200] w-full">
+                <div className=" relative aspect-[200/200] w-[85%]">
                   <Image
-                    className="shadow-solid-l dark:hidden"
-                    src="/images/hero/Hero-IMG2.png"
+                    className="shadow-solid-l dark:hidden rounded-2xl"
+                    src="/images/hero/hero-new2.jpg"
                     alt="Hero"
                     fill
                   />
