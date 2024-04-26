@@ -15,9 +15,8 @@ const Feature = () => {
             headerInfo={{
               title: "SOLID SERVICES",
               subtitle: "Services of Tech Capital Managed Services",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              description: `Empowering your success with cutting-edge 
+              technology solutions tailored to your business needs`,
             }}
           />
           {/* <!-- Section Title End --> */}

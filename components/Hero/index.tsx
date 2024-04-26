@@ -24,7 +24,7 @@ const Hero = () => {
                   (Pvt) Ltd
                 </span>
               </h1>
-              <p className=" text-justify">
+              <p className=" text-justify leading-7">
                 Tech Capital Managed Services (Pvt) Ltd provides an extensive array of managed 
                 services encompassing IT infrastructure management, maintenance and monitoring, 
                 support for systems || and applications, call center services, and resource 
@@ -88,8 +88,8 @@ const Hero = () => {
                     fill
                   />
                   <Image
-                    className="hidden shadow-solid-l dark:block"
-                    src="/images/hero/Hero-IMG-dark.png"
+                    className="hidden shadow-solid-l dark:block rounded-2xl"
+                    src="/images/hero/hero-new2.jpg"
                     alt="Hero"
                     fill
                   />

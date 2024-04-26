@@ -12,16 +12,16 @@ const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
           <h2 className="mb-7 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle2">
             {title}
           </h2>
-          <p className="mb-5">{desc1}</p>
-          <p className="w-11/12">{desc2}</p>
+          <p className="mb-5 text-justify">{desc1}</p>
+          <p className="w-11/12 text-justify">{desc2}</p>
         </div>
-        <div className="relative mx-auto hidden aspect-[562/366] max-w-[550px] md:block md:w-1/2">
-          <Image src={image} alt={title} fill className="dark:hidden" />
+        <div className="relative mx-auto hidden aspect-[562/399] max-w-[550px] md:block md:w-1/2">
+          <Image src={image} alt={title} fill className="dark:hidden rounded-2xl" />
           <Image
             src={imageDark}
             alt={title}
             fill
-            className="hidden dark:block"
+            className="hidden dark:block rounded-2xl"
           />
         </div>
       </div>
