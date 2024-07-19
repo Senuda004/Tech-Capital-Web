@@ -1,8 +1,31 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import emailjs from 'emailjs-com';
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Send email using EmailJS
+    emailjs.send('service_zbdv6zh_capital', 'template_szd9dg6', { email }, 'ga7T_pbGeD2nZ9Txk')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        // Handle success (e.g., show a success message)
+        alert('You have successfully subscribed to the newsletter!');
+      }, (error) => {
+        console.error('Error sending email:', error);
+        // Handle error (e.g., show an error message)
+        alert('Failed to subscribe to the newsletter. Please try again later.');
+      });
+
+      // Clear input field after submission
+      setEmail('');
+  };
+
   return (
     <>
       <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
@@ -45,9 +68,9 @@ const Footer = () => {
                   />
                 </a>
 
-                <p className="mb-10 mt-5">
+                {/* <p className="mb-10 mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                </p> */}
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   contact
@@ -56,7 +79,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  info@techcapital.lk
                 </a>
               </motion.div>
 
@@ -86,7 +109,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Home
@@ -94,26 +117,34 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="#services"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Product
+                        Services
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="#about"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Careers
+                        About
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="#faq"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Pricing
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#testimonials"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Testimonials
                       </a>
                     </li>
                   </ul>
@@ -138,40 +169,16 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Support
+                    Contact
                   </h4>
 
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="#support"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Company
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Press media
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Our Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Contact Us
+                        Support
                       </a>
                     </li>
                   </ul>
@@ -202,17 +209,23 @@ const Footer = () => {
                     Subscribe to receive future updates
                   </p>
 
-                  <form action="#">
+                  <form action="#" method="POST" onSubmit={handleSubmit}>
                     <div className="relative">
                       <input
-                        type="text"
+                        type="email"
                         placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        name="email"
+                        id="email"
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)} 
+                        required
+                        className="w-[40vh] rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
                       />
 
                       <button
                         aria-label="signup to newsletter"
                         className="absolute right-0 p-4"
+                        type="submit"
                       >
                         <svg
                           className="fill-[#757693] hover:fill-primary dark:fill-white"
@@ -266,16 +279,11 @@ const Footer = () => {
               <ul className="flex items-center gap-8">
                 <li>
                   <a href="#" className="hover:text-primary">
-                    English
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="#support" className="hover:text-primary">
                     Support
                   </a>
                 </li>

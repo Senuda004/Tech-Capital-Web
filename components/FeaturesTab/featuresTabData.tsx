@@ -6,8 +6,8 @@ const featuresTabData: FeatureTab[] = [
     title: "About Our Company",
     desc1: `Tech Capital Managed Services (Pvt) Ltd offers robust IT infrastructure management, system support, and proactive monitoring services to enhance your business operations. Our tailored solutions include hardware maintenance, security, and compliance, ensuring a reliable and secure technology environment.`,
     desc2: `With a diverse client base in Sri Lanka and the UK, we focus on delivering exceptional service and innovative solutions. Our comprehensive services also encompass resource outsourcing and call center operations, dedicated to boosting your operational efficiency and customer engagement.`,
-    image: "/images/features/features-light-01.png",
-    imageDark: "/images/features/features-dark-01.svg",
+    image: "/images/features/about-1.jpg",
+    imageDark: "/images/features/about-1.jpg",
   },
   {
     id: "tabTwo",
