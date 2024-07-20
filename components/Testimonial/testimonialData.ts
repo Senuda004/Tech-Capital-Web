@@ -14,7 +14,7 @@ export const testimonialData: Testimonial[] = [
   {
     id: 2,
     name: "Michael Roberts",
-    designation: "Director of Operations at GreenScape Co.",
+    designation: "Director at GreenScape Co.",
     image: image2,
     content:
       "Since partnering with Tech Capital, our system downtime has decreased dramatically. Their team is knowledgeable, responsive, and extremely reliable. Highly recommended!",

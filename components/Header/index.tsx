@@ -35,24 +35,34 @@ const Header = () => {
           : ""
       }`}
     >
-      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0 h-30">
+      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0 h-18">
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <Image
-              src="/images/logo/logo-2.svg"
+              src="/images/logo/Logo-Horizontal.svg"
               alt="logo"
               width={50}
               height={20}
-              className="hidden w-full dark:block h-45"
+              className="hidden w-full dark:hidden h-auto"
               layout="responsive"
             />
+            <img 
+              src="https://ik.imagekit.io/5y4drpbbfp/Tech-Capital-Web/Logo-Only-Graphic.svg?updatedAt=1721447402672"
+              alt="LOGO"
+              className="hidden w-17 dark:block lg:w-20 md:20 xl:w-20"
+            />
             <Image
-              src="/images/logo/logo-2.svg"
+              src="/images/logo/Logo-Horizontal.svg"
               alt="logo"
-              width={50}
-              height={20}
-              className="w-full dark:hidden h-45 "
+              width={20}
+              height={10}
+              className="hidden w-full dark:hidden h-auto "
               layout="responsive"
+            />
+            <img 
+              src="https://ik.imagekit.io/5y4drpbbfp/Tech-Capital-Web/Logo-Only-Graphic.svg?updatedAt=1721447402672"
+              alt="LOGO"
+              className="w-17 dark:hidden lg:w-20 md:20 xl:w-20"
             />
           </a>
 
