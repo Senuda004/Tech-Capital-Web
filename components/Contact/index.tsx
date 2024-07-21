@@ -215,12 +215,12 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                {/* <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Phone Number
                 </h4>
                 <p>
                   <a href="#">+94 77 386 1585</a>
-                </p>
+                </p> */}
               </div>
             </motion.div>
           </div>
