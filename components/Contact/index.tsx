@@ -211,7 +211,7 @@ const Contact = () => {
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">info@techcapital.lk</a>
+                  <a href="mailto:info@techcapital.lk">info@techcapital.lk</a>
                 </p>
               </div>
               <div>

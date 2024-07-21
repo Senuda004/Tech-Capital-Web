@@ -76,7 +76,7 @@ const Footer = () => {
                   contact
                 </p>
                 <a
-                  href="#"
+                  href="mailto:info@techcapital.lk"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
                   info@techcapital.lk
