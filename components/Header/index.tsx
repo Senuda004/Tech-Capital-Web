@@ -47,7 +47,7 @@ const Header = () => {
               layout="responsive"
             />
             <img 
-              src="https://ik.imagekit.io/5y4drpbbfp/Tech-Capital-Web/Logo-Only-Graphic.svg?updatedAt=1721447402672"
+              src="https://ik.imagekit.io/5y4drpbbfp/Tech-Capital-Web/Logo-Only-Graphic-SVG.svg?updatedAt=1721544832452"
               alt="LOGO"
               className="hidden w-17 dark:block lg:w-20 md:20 xl:w-20"
             />
@@ -60,7 +60,7 @@ const Header = () => {
               layout="responsive"
             />
             <img 
-              src="https://ik.imagekit.io/5y4drpbbfp/Tech-Capital-Web/Logo-Only-Graphic.svg?updatedAt=1721447402672"
+              src="https://ik.imagekit.io/5y4drpbbfp/Tech-Capital-Web/Logo-Only-Graphic-SVG.svg?updatedAt=1721544832452"
               alt="LOGO"
               className="w-17 dark:hidden lg:w-20 md:20 xl:w-20"
             />
